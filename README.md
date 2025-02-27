@@ -36,11 +36,6 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 - ✅ Build Automation: CodeBuild (buildspec.yml)
 - ✅ Deployment Strategy: In Line deployment
 
-# Results
-
-- HTML website hosted on the EC2 instances
-
-![Screenshot](images/Capture.PNG)
 
 # Code build settings
 
@@ -67,3 +62,39 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 ![Screenshot](images/images6.PNG)
 
 ![Screenshot](images/images7.PNG)
+
+- After running the build and on its completion we can see the code being stored as a zip file in S3 bucket.
+
+![Screenshot](images/images8.PNG)
+
+![Screenshot](images/images9.PNG)
+
+# Code Deploy settings
+
+- creation of applications, deployment groups and deployments
+
+![Screenshot](images/images10.PNG)
+
+![Screenshot](images/images11.PNG)
+
+![Screenshot](images/images12.PNG)
+
+- Need to create an Ubuntu 22.04 LTS version EC2 instance with code deploy agent installed
+
+![Screenshot](images/images13.PNG)
+
+![Screenshot](images/images14.PNG)
+
+- Deployment creation
+
+![Screenshot](images/images15.PNG)
+
+![Screenshot](images/images16.PNG)
+
+- Deployment completion and application hosted on the public IP of the EC2 instance.
+
+![Screenshot](images/images17.PNG)
+
+- HTML website hosted on the EC2 instances
+
+![Screenshot](images/Capture.PNG)
