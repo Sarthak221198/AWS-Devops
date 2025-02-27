@@ -105,6 +105,12 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 
 ![Screenshot](images/images23.PNG)
 
+- Pipeline execution completed.
+
+![Screenshot](images/images24.PNG)
+
+- Testing of the pipeline with changes in the index.html
+- As soon as we push the new changes to the github repo the pipeline executes automatically
 
 # 🛠 Technologies Used
 - ✅ AWS Services: CodePipeline, CodeBuild, CodeDeploy, S3, EC2, IAM
