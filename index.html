@@ -1,28 +1,127 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS DevOps | Learn & Practice</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        color: #333;
-        text-align: center;
-      }
-      
-      h1 {
-        font-size: 36px;
-        margin-top: 50px;
-        color: #6130e8;
-      }
-      
-      p {
-        font-size: 18px;
-        margin: 20px 0;
-      }
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6130e8, #1e1e2f);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 0;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            font-size: 50px;
+            background: -webkit-linear-gradient(left, #ffcc00, #ff66cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Section Styling */
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            margin-top: 100px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #ffcc00;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            opacity: 0.9;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: white;
+            background: #ff5733;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff2a00;
+            transform: scale(1.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
-  </head>
-  <body>
-    <h1>AWS Devops!</h1>
-    <p>AWS devops practice </p>
-  </body>
+</head>
+<body>
+
+    <header>
+        <h1>AWS DevOps</h1>
+    </header>
+
+    <div class="container">
+        <h2>What is AWS DevOps?</h2>
+        <p>AWS DevOps is a set of practices that automate and integrate the processes between software development and IT operations. It helps in faster development, deployment, and monitoring.</p>
+
+        <h2>Why Learn AWS DevOps?</h2>
+        <p>With AWS DevOps, you can efficiently manage cloud resources, automate infrastructure, and improve application performance. Learning AWS DevOps can boost your career in cloud engineering.</p>
+
+        <h2>Start Your DevOps Journey</h2>
+        <p>Enhance your AWS DevOps skills with hands-on practice, automation, and CI/CD pipelines.</p>
+
+        <button class="btn">Get Started</button>
+    </div>
+
+    <footer>
+        © 2025 AWS DevOps Practice | Designed for Learning
+    </footer>
+
+</body>
 </html>
