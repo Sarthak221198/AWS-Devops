@@ -112,10 +112,28 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 - Testing of the pipeline with changes in the index.html
 - As soon as we push the new changes to the github repo the pipeline executes automatically
 
+- New pipeline execution
+
+![Screenshot](images/images25.PNG)
+
+![Screenshot](images/images27.PNG)
+
+- Updated html index website with succesfull code build and code deploy on the EC2 instance
+
+![Screenshot](images/images26.PNG)
+
 # 🛠 Technologies Used
 - ✅ AWS Services: CodePipeline, CodeBuild, CodeDeploy, S3, EC2, IAM
 - ✅ Version Control: GitHub
 - ✅ Build Automation: CodeBuild (buildspec.yml)
 - ✅ Deployment Strategy: In Line deployment
+
+# Summary
+
+- The project successfully implemented a CI/CD pipeline using AWS services—CodePipeline, CodeBuild, and CodeDeploy—to automate the software deployment process. This setup ensured that application updates were efficiently built, tested, and deployed with minimal manual intervention.
+- The pipeline started with source code management, where the application code was stored in GitHub. CodePipeline was configured to detect changes in the repository and trigger the pipeline automatically upon new commits. This streamlined the development workflow, eliminating the need for manual deployments.
+- Once a change was detected, AWS CodeBuild handled the continuous integration process. It fetched the latest code, executed build commands as defined in the buildspec.yml file, and ran unit tests to ensure the code's stability. If the build process was successful, the artifacts were packaged and stored in Amazon S3 for deployment.
+- For continuous deployment, AWS CodeDeploy managed the release process to EC2 instances or ECS containers. The deployment strategy depended on the environment, with rolling deployments used for EC2 to ensure a gradual rollout, while blue-green deployments were used for ECS to achieve zero-downtime updates. The deployment lifecycle was controlled by the appspec.yml file, which defined pre- and post-deployment actions such as stopping services, extracting files, and restarting applications.
+- By implementing this CI/CD pipeline, the project achieved faster and more reliable deployments, reducing manual errors and improving efficiency. The automated workflow enabled seamless application updates, high availability, and scalability, making it easier to manage deployments across different environments
 
 
