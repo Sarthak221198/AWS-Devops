@@ -1,4 +1,5 @@
-🚀 AWS DevOps Project: CI/CD with CodeBuild, CodeDeploy, and CodePipeline
+# ** AWS DevOps Project: CI/CD with CodeBuild, CodeDeploy, and CodePipeline ** 
+
 📌 Project Overview
 This project demonstrates a fully automated CI/CD pipeline using AWS DevOps services, including:
 
