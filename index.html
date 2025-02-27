@@ -8,63 +8,71 @@
         /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #6130e8, #1e1e2f);
+            background: linear-gradient(135deg, #121212, #1e1e2f);
             color: white;
             text-align: center;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
         }
 
-        /* Header Styles */
+        /* Header Styling */
         header {
             width: 100%;
-            padding: 20px 0;
+            padding: 20px;
             background: rgba(255, 255, 255, 0.1);
             position: fixed;
             top: 0;
+            left: 0;
             backdrop-filter: blur(5px);
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 45px;
             background: -webkit-linear-gradient(left, #ffcc00, #ff66cc);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
             letter-spacing: 2px;
-            animation: fadeIn 1.5s ease-in-out;
+            margin: 0;
         }
 
-        /* Section Styling */
-        .container {
-            max-width: 800px;
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             padding: 20px;
-            margin-top: 100px;
+            text-align: center;
         }
 
-        h2 {
-            font-size: 30px;
-            color: #ffcc00;
+        .hero img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
             margin-top: 20px;
+            color: #ffcc00;
         }
 
-        p {
+        .hero p {
             font-size: 18px;
-            line-height: 1.6;
+            max-width: 700px;
+            line-height: 1.5;
             opacity: 0.9;
-            animation: slideIn 1.5s ease-in-out;
         }
 
-        /* Button Styling */
+        /* Button */
         .btn {
             display: inline-block;
             margin-top: 20px;
-            padding: 12px 25px;
+            padding: 14px 30px;
             font-size: 18px;
             color: white;
             background: #ff5733;
@@ -80,23 +88,12 @@
             transform: scale(1.1);
         }
 
-        /* Footer Styling */
+        /* Footer */
         footer {
-            margin-top: 50px;
-            padding: 10px;
+            padding: 15px;
             font-size: 14px;
             opacity: 0.7;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            background: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
@@ -106,18 +103,12 @@
         <h1>AWS DevOps</h1>
     </header>
 
-    <div class="container">
-        <h2>What is AWS DevOps?</h2>
-        <p>AWS DevOps is a set of practices that automate and integrate the processes between software development and IT operations. It helps in faster development, deployment, and monitoring.</p>
-
-        <h2>Why Learn AWS DevOps?</h2>
-        <p>With AWS DevOps, you can efficiently manage cloud resources, automate infrastructure, and improve application performance. Learning AWS DevOps can boost your career in cloud engineering.</p>
-
-        <h2>Start Your DevOps Journey</h2>
-        <p>Enhance your AWS DevOps skills with hands-on practice, automation, and CI/CD pipelines.</p>
-
-        <button class="btn">Get Started</button>
-    </div>
+    <section class="hero">
+        <img src="images/download.png" alt="DevOps Image">
+        <h2>Master AWS DevOps</h2>
+        <p>Learn how to automate cloud infrastructure, manage CI/CD pipelines, and deploy scalable applications with AWS.</p>
+        <button class="btn">Start Learning</button>
+    </section>
 
     <footer>
         © 2025 AWS DevOps Practice | Designed for Learning
