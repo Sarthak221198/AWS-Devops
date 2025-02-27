@@ -83,7 +83,7 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 
 - HTML website hosted on the EC2 instances
 
-![Screenshot](images/Capture1.PNG)
+![Screenshot](images/Capture.PNG)
 
 
 # Pipeline Execution (AWS CodePipeline)
