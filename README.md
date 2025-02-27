@@ -31,13 +31,29 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 - Ensures seamless deployments.
 
 # 🛠 Technologies Used
-✅ AWS Services: CodePipeline, CodeBuild, CodeDeploy, S3, EC2, IAM
-✅ Version Control: GitHub
-✅ Build Automation: CodeBuild (buildspec.yml)
-✅ Deployment Strategy: In Line deployment
+- ✅ AWS Services: CodePipeline, CodeBuild, CodeDeploy, S3, EC2, IAM
+- ✅ Version Control: GitHub
+- ✅ Build Automation: CodeBuild (buildspec.yml)
+- ✅ Deployment Strategy: In Line deployment
 
 # Results
 
 - HTML website hosted on the EC2 instances
 
 ![Screenshot](images/Capture.PNG)
+
+# Code build settings
+
+![Screenshot](images/images1.PNG)
+
+![Screenshot](images/images2.PNG)
+
+![Screenshot](images/images3.PNG)
+
+![Screenshot](images/images4.PNG)
+
+![Screenshot](images/images5.PNG)
+
+![Screenshot](images/images6.PNG)
+
+![Screenshot](images/images7.PNG)
