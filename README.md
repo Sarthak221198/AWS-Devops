@@ -10,27 +10,34 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 
 🎯 Project Workflow
 
-- Stage 1 Setting up github repoistry
+- Developers push changes to a GitHub repository.
+- AWS CodePipeline detects the change and triggers the process.
 
-Developers push changes to a GitHub repository.
-AWS CodePipeline detects the change and triggers the process.
-Build Phase (AWS CodeBuild)
+# Build Phase (AWS CodeBuild)
 
-The application source code is retrieved.
-CodeBuild runs unit tests and creates an artifact.
-The built package is stored in an S3 bucket.
-Deployment Phase (AWS CodeDeploy)
+- The application source code is retrieved.
+- CodeBuild runs unit tests and creates an artifact.
+- The built package is stored in an S3 bucket.
 
-CodeDeploy fetches the artifact from S3.
-Deploys the application to EC2 instances, ECS, or Lambda.
-Uses deployment strategies like Blue-Green or Rolling Updates.
-Pipeline Execution (AWS CodePipeline)
+# Deployment Phase (AWS CodeDeploy)
 
-Automates the entire process.
-Ensures seamless deployments.
-Notifies developers via AWS SNS or CloudWatch.
-🛠 Technologies Used
+- CodeDeploy fetches the artifact from S3.
+- Deploys the application to EC2 instances, ECS, or Lambda.
+- Uses deployment strategies like Blue-Green or Rolling Updates.
+
+# Pipeline Execution (AWS CodePipeline)
+
+- Automates the entire process.
+- Ensures seamless deployments.
+
+# 🛠 Technologies Used
 ✅ AWS Services: CodePipeline, CodeBuild, CodeDeploy, S3, EC2, IAM
 ✅ Version Control: GitHub
 ✅ Build Automation: CodeBuild (buildspec.yml)
 ✅ Deployment Strategy: In Line deployment
+
+# Results
+
+- HTML website hosted on the EC2 instances
+
+![Screenshot](images/Capture.PNG)
