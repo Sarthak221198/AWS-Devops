@@ -9,7 +9,8 @@ This project demonstrates a fully automated CI/CD pipeline using AWS DevOps serv
 - AWS CodePipeline → Automates the workflow from source to deployment
 
 🎯 Project Workflow
-Code Commit
+
+- Stage 1 Setting up github repoistry
 
 Developers push changes to a GitHub repository.
 AWS CodePipeline detects the change and triggers the process.
